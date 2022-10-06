@@ -58,9 +58,51 @@ nav ul li{
     font-weight: 600;
 }
 
+/* .section{
+    background-color: #DCDCDC;
+} */
 
-
+.banner{
+    background-image: url(./imatges/pattern.jpg);
+    padding-top: 6rem;
+    border-top: 2px dotted black;
+}
 
 .banner img{
     width: 100%;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+
+/* TABLE ------------------------------------------------*/
+.table-container{
+    background-color: #DCDCDC;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.table-container h2{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.table-container table{
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.table-container table thead{
+    background-color: #704C8F;
+}
+
+.table-container table thead tr{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
 }
