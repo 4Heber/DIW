@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
 }
 
 main{
@@ -32,6 +33,7 @@ header img{
 }
 
 header h1{
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 header h4{
@@ -46,15 +48,15 @@ nav{
 nav ul{
     display: flex;
     flex-flow: row nowrap;
-    height: 50px;
 }
 
 nav ul li{
     list-style: none;
+    align-self: center;
     background-color: #9376AC;
-    text-align: center;
     color: #fff;
-    padding: 1rem;
+    padding: 10px 20px;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -62,14 +64,27 @@ nav ul li{
     background-color: #DCDCDC;
 } */
 
-.banner{
+.pattern{
+    display: block;
+    position: relative;
     background-image: url(./imatges/pattern.jpg);
-    padding-top: 6rem;
+    height: 100px;
     border-top: 2px dotted black;
+    text-indent: -999px;
+}
+
+.banner{
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
 }
 
 .banner img{
-    width: 100%;
+    position: relative;
+    max-width: 100%;
+    top: -10rem;
     border-top: 2px dotted black;
     border-bottom: 2px dotted black;
 }
@@ -80,13 +95,15 @@ nav ul li{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
     padding: 2rem 0;
+    border-bottom: 2px dotted black;
 }
 
 .table-container h2{
+    position: relative;
     text-decoration: underline;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .table-container table{
@@ -98,11 +115,71 @@ nav ul li{
 
 .table-container table thead{
     background-color: #704C8F;
+    width: 100%;
 }
 
 .table-container table thead tr{
+    border-bottom: 4px solid black;
+}
+
+.table-container table thead tr th{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.table-container table tbody tr:nth-child(odd){
+    background-color: #858585;
+}
+
+.table-container table tbody tr{
+    text-align: center;
+}
+
+.table-container table tbody tr td{
+    padding: 0.5rem;
+}
+
+/* TECHS TABLE --------------------------------------------*/
+.techs{
+    max-width: 100%;
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    text-align: center;
+}
+
+.techs figure{
+    width: 250px;
+    padding-top: 1rem;
+    border: 1px solid black;
+}
+
+.techs figure img{
     width: 100%;
+}
+
+.techs figure figcaption{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* FOOTER -------------------------------------------------*/
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #210439;
+    color: #fff;
+}
+
+footer p:first-child{
+    position: relative;
+    padding: 1rem;
+}
+
+footer p:last-child{
+    position: relative;
+    align-self:flex-end;
     padding: 1rem;
 }
